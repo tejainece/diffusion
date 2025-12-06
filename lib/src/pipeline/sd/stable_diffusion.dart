@@ -1,11 +1,9 @@
-import 'package:tensor/tensor.dart';
-import 'package:tensor/src/autoencoder/vae.dart';
+import 'package:diffusion/diffusion.dart';
+import 'package:kamma/kamma.dart';
 
 abstract class DiffusionPipeline {}
 
 abstract class SimpleDiffusionPipeline {}
-
-abstract class TextEncoder {}
 
 abstract class FeatureExtractor {}
 

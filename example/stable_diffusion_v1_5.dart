@@ -1,4 +1,5 @@
-import 'package:tensor/tensor.dart';
+import 'package:diffusion/diffusion.dart';
+import 'package:kamma/kamma.dart';
 
 Future<void> main() async {
   final prompt = 'minimalistic symmetrical logo with moose head';

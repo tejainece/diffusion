@@ -1,5 +1,4 @@
-import 'package:tensor/tensor.dart';
-import 'package:tensor/src/autoencoder/encoder_block.dart';
+import 'package:diffusion/diffusion.dart';
 import 'package:test/test.dart';
 
 void main() async {

@@ -1,4 +1,4 @@
-import 'package:tensor/tensor.dart';
+import 'package:diffusion/diffusion.dart';
 
 void main() {
   final context = Context.best();

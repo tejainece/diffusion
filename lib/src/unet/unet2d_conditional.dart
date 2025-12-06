@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:diffusion/diffusion.dart';
 import 'package:tensor/tensor.dart';
 
 abstract class UNet {}
@@ -80,7 +81,8 @@ class Timesteps extends Module {
   Tensor forward(int timestep) {
     int halfDim = numChannels ~/ 2;
     double embFactor = log(10000) / (halfDim - 1);
-    var emb = Tensor.arange(halfDim, datatype: DataType.float32) * -embFactor;
+    var emb =
+        Tensor.arange(0, halfDim, datatype: DataType.float32) * -embFactor;
     emb = emb.exp();
 
     var t = Tensor.from([timestep.toDouble()], [1], datatype: DataType.float32);

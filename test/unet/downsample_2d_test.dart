@@ -1,4 +1,4 @@
-import 'package:tensor/tensor.dart';
+import 'package:diffusion/diffusion.dart';
 import 'package:test/test.dart';
 
 void main() async {

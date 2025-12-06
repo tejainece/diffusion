@@ -1,4 +1,4 @@
-import 'package:tensor/tensor.dart';
+import 'package:diffusion/diffusion.dart';
 
 class DownEncoderBlock2D extends Module implements EmbeddableModule {
   final List<ResnetBlock2D> resnets;

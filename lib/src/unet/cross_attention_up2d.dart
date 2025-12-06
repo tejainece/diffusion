@@ -1,5 +1,5 @@
-import 'package:tensor/tensor.dart';
-import 'package:tensor/src/unet/transformer_2d.dart';
+import 'package:diffusion/diffusion.dart';
+import 'package:diffusion/src/unet/transformer_2d.dart';
 
 class CrossAttnUpBlock2D extends Module implements UNet2DUpBlock {
   final List<ResnetBlock2D> resnets;

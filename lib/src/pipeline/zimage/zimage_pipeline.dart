@@ -1,7 +1,5 @@
-import 'package:tensor/tensor.dart';
-import 'package:tensor/src/autoencoder/vae.dart';
-import 'package:tensor/src/diffusion/zimage/zimage_config.dart';
-import 'package:tensor/src/diffusion/zimage/modality_projector.dart';
+import 'package:diffusion/diffusion.dart';
+import 'package:kamma/kamma.dart';
 
 /// Z-Image Diffusion Pipeline
 ///

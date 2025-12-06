@@ -1,7 +1,5 @@
 import 'package:test/test.dart';
-import 'package:tensor/tensor.dart';
-import 'package:tensor/src/unet/cross_attention_up2d.dart';
-import 'package:tensor/src/unet/transformer_2d.dart';
+import 'package:diffusion/diffusion.dart';
 
 void main() {
   final context = Context.best();

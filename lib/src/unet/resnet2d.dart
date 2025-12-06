@@ -1,3 +1,4 @@
+import 'package:diffusion/diffusion.dart';
 import 'package:tensor/tensor.dart';
 
 class ResnetBlock2D extends Module implements EmbeddableModule {

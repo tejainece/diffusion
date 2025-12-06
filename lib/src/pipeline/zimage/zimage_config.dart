@@ -1,4 +1,4 @@
-import 'package:tensor/src/transformers/s3dit/s3dit_config.dart';
+import 'package:kamma/kamma.dart';
 
 /// Configuration for Z-Image diffusion pipeline
 class ZImageConfig {

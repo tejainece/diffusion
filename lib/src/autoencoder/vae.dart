@@ -1,5 +1,4 @@
-import 'package:tensor/tensor.dart';
-import 'package:tensor/src/autoencoder/autoencoder.dart';
+import 'package:diffusion/diffusion.dart';
 
 abstract class Vae implements Module {}
 

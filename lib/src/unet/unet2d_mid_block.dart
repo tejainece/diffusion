@@ -1,4 +1,4 @@
-import 'package:tensor/tensor.dart';
+import 'package:diffusion/diffusion.dart';
 
 class UNet2DMidBlock extends Module implements UNet2DBlock {
   final ResnetBlock2D resnet0;
