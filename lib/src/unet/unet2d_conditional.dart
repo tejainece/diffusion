@@ -156,12 +156,12 @@ class TimestepEmbedding extends Module implements SimpleModule {
     String prefix = '',
     required String name,
   }) async {
-    final linear1 = await LinearLayer.loadFromSafeTensorStatic(
+    final linear1 = await LinearLayer.loadFromSafeTensor(
       loader,
       prefix: '${prefix}linear_1.',
       name: 'linear_1',
     );
-    final linear2 = await LinearLayer.loadFromSafeTensorStatic(
+    final linear2 = await LinearLayer.loadFromSafeTensor(
       loader,
       prefix: '${prefix}linear_2.',
       name: 'linear_2',

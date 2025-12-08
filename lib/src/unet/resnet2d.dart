@@ -224,7 +224,7 @@ class ResnetBlock2D extends Module implements EmbeddableModule {
 
     LinearLayer? timeEmbProj;
     if (loader.hasTensorWithPrefix('${prefix}time_emb_proj.')) {
-      timeEmbProj = await LinearLayer.loadFromSafeTensorStatic(
+      timeEmbProj = await LinearLayer.loadFromSafeTensor(
         loader,
         prefix: '${prefix}time_emb_proj.',
       );

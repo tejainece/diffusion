@@ -139,7 +139,7 @@ class ModalityProjector extends Module {
     required int outputDim,
     bool isTwoLayer = false,
   }) async {
-    final fc1 = await LinearLayer.loadFromSafeTensorStatic(
+    final fc1 = await LinearLayer.loadFromSafeTensor(
       loader,
       prefix: '${prefix}fc1.',
       name: 'fc1',
@@ -147,7 +147,7 @@ class ModalityProjector extends Module {
 
     LinearLayer? fc2;
     if (isTwoLayer) {
-      fc2 = await LinearLayer.loadFromSafeTensorStatic(
+      fc2 = await LinearLayer.loadFromSafeTensor(
         loader,
         prefix: '${prefix}fc2.',
         name: 'fc2',
