@@ -1,5 +1,4 @@
 import 'package:diffusion/diffusion.dart';
-import 'package:tensor/tensor.dart';
 
 class ResnetBlock2D extends Module implements EmbeddableModule {
   final double outputScaleFactor;
@@ -63,7 +62,7 @@ class ResnetBlock2D extends Module implements EmbeddableModule {
           embeds = nonlinearity.forward(embeds, context: context);
         }
         embeds = timeEmbProj!.forward(embeds, context: context);
-        embeds = embeds.index([Slice.all(), Slice.all(), NewDim(), NewDim()]);
+        embeds = embeds.index([.all, .all, .newDim, .newDim]);
       }
       if (timeEmbedNorm == .def) {
         hiddenStates = hiddenStates + embeds;

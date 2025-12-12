@@ -30,7 +30,7 @@ void main() async {
         final result = test.output.allCloseSlow(output, atol: 1e-02);
         if (result != null) {
           print(
-            'Max difference: $result, ${output.index(result)}, ${test.output.index(result)} ${output.index(result) - test.output.index(result)}',
+            'Max difference: $result, ${output.at(result)}, ${test.output.at(result)} ${output.at(result) - test.output.at(result)}',
           );
         }
 
