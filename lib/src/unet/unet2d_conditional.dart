@@ -85,7 +85,7 @@ class Timesteps extends Module {
         Tensor.arange(0, halfDim, datatype: DataType.float32) * -embFactor;
     emb = emb.exp();
 
-    var t = Tensor.from([timestep.toDouble()], [1], datatype: DataType.float32);
+    var t = Tensor.from([timestep.toDouble()], [1], dataType: DataType.float32);
     emb = t.view([1, 1]) * emb.view([1, -1]);
     emb = Tensor.cat([emb.sin(), emb.cos()], dim: -1);
 
