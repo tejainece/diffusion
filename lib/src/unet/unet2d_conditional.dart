@@ -82,7 +82,7 @@ class Timesteps extends Module {
     int halfDim = numChannels ~/ 2;
     double embFactor = log(10000) / (halfDim - 1);
     var emb =
-        Tensor.arange(0, halfDim, datatype: DataType.float32) * -embFactor;
+        Tensor.arange(0, halfDim, dataType: DataType.float32) * -embFactor;
     emb = emb.exp();
 
     var t = Tensor.from([timestep.toDouble()], [1], dataType: DataType.float32);
